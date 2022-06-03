@@ -46,7 +46,7 @@ func init() {
 	flag.BoolVar(&lockState, "l", true, "Should we lock the state prior to move?")
 	flag.BoolVar(&forceMove, "f", false, "Force move resource, deletes then moves")
 	flag.BoolVar(&autoApprove, "y", false, "Auto approve plan")
-	flag.IntVar(&numThreads, "n", 6, "Number of threads to use for operations")
+	flag.IntVar(&numThreads, "n", 1, "Number of threads to use for operations")
 }
 
 func callStateMv(source, target string) (string, error) {
